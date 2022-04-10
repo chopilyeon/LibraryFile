@@ -14,7 +14,7 @@ public class Showinfo{
         ArrayList<Book> list=HelpTools.bookread();
         for(int i=0;i<list.size();i++){
             if((list.get(i).getId().equals(name))&&list.get(i).getPassword().equals(password)){
-                System.out.println("비밀번호는" + list.get(i).getBookname()+list.get(i).getBookhistory()+list.get(i).getUniqueCode()+list.get(i).getDate()+list.get(i).getWriter());
+                System.out.println(list.get(i).getBookname()+list.get(i).getBookhistory()+list.get(i).getUniqueCode()+list.get(i).getDate()+list.get(i).getWriter());
             }
         }
 

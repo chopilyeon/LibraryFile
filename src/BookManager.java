@@ -80,7 +80,7 @@ public class BookManager implements Serializable {
     }
 //-----------------------------------------------------------------------------------------------------------
 
-
+/*
     public static void bookadd(BookManager bookmanager) {
 
 
@@ -102,6 +102,8 @@ public class BookManager implements Serializable {
             e.printStackTrace();
         }
     }
+*/
+
 
     public static void bookremove(ArrayList<BookManager> list) {
 
@@ -129,7 +131,7 @@ public class BookManager implements Serializable {
 //-----------------------------------------------------------------------------------------------------------------
 
 /*
-        public static void bookremove(ArrayList<BookManager> list) {
+        public static void bookremove() {
 
             try {
 
@@ -179,7 +181,7 @@ public class BookManager implements Serializable {
             list = (ArrayList)in.readObject();
 
 
-            System.out.println(list);
+            //System.out.println(list);
 
             in.close();
 

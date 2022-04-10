@@ -69,9 +69,9 @@ public class Librarymain {
                     }
                 case 4:
                     System.out.println("===================================대출 가능한 책 확인===================================");
+                    sc.nextLine();
                     Showinfo.showBook();
                     System.out.println("계속 하고 진행하고 싶으면 Y를 그만 끝내려면 N을 누르십시오.");
-                    sc.nextLine();
                     if(sc.nextLine().equalsIgnoreCase("Y")) {
                         continue;
                     }else if(!sc.nextLine().equalsIgnoreCase("Y")) {
@@ -82,9 +82,9 @@ public class Librarymain {
 
                 case 5:
                     System.out.println("===================================비밀번호 찾기===================================");
+                    sc.nextLine();
                     ShowPassword.showPassword();
                     System.out.println("계속 하고 진행하고 싶으면 Y를 그만 끝내려면 N을 누르십시오.");
-                    sc.nextLine();
                     if (sc.nextLine().equalsIgnoreCase("Y")) {
                         continue;
                     } else if (!sc.nextLine().equalsIgnoreCase("Y")) {
@@ -146,9 +146,9 @@ public class Librarymain {
 
                 case 8:
                     System.out.println("===================================자기 정보 보기===================================");
+                    sc.nextLine();
                     Showinfo.showinformation();
                     System.out.println("계속 하고 진행하고 싶으면 Y를 그만 끝내려면 N을 누르십시오.");
-                    sc.nextLine();
                     if (sc.nextLine().equalsIgnoreCase("Y")) {
                         continue;
                     } else if (!sc.nextLine().equalsIgnoreCase("Y")) {
@@ -159,9 +159,9 @@ public class Librarymain {
 
                 case 9:
                     System.out.println("===================================회원 탈퇴===================================");
+                    sc.nextLine();
                     Withdrawal.withdraw();
                     System.out.println("계속 하고 진행하고 싶으면 Y를 그만 끝내려면 N을 누르십시오.");
-                    sc.nextLine();
                     if (sc.nextLine().equalsIgnoreCase("Y")) {
                         continue;
                     } else if (!sc.nextLine().equalsIgnoreCase("Y")) {

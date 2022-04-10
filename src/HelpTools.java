@@ -149,7 +149,7 @@ public class HelpTools {
             list = (ArrayList)in.readObject();
 
 
-            System.out.println(list);
+           // System.out.println(list);
 
             in.close();
 

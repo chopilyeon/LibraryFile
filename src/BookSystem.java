@@ -37,12 +37,14 @@ public class BookSystem {
             if (login1 != 0 && booklist.get(bookborrow).getBookhistory().equals("대여 이력 없음")) {
                 System.out.println("빌리고 싶은 책을 입력하세요.");
                 String bookname = sc.nextLine();
+                System.out.println("빌리고 싶은 책의 작가를 입력하세요.");
+                String bookwriter=sc.nextLine();
                 for (int j = 0; j < managerlist.size(); j++) {
-                    if (managerlist.get(j).getBookname().equals(bookname)) {
+                    if (managerlist.get(j).getBookname().equals(bookname)&&managerlist.get(j).getWriter().equals(bookwriter)) {
                         booklist.add(new Book(booklist.get(bookborrow).getId(), booklist.get(bookborrow).getPassword(), bookname, managerlist.get(j).getWriter(), managerlist.get(j).getUniqueNumber(), date, "대여"));
                         booklist.remove(bookborrow);
                         managerlist.remove(j); // 리스트는 동일한 책이 있어도 맨 앞줄부터 하나씩 제거되는 걸 이용함.
-                        System.out.println(bookname + "을" + date + "에 대여처리하였습니다");
+                        System.out.println(bookwriter+"의"+bookname + "을" + date + "에 대여처리하였습니다");
                         HelpTools.bookwrite(booklist);
                         BookManager.bookadd(managerlist);
                         break;
