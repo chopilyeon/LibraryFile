@@ -40,8 +40,8 @@ public class HelpTools {
             ObjectOutputStream out = new ObjectOutputStream(fos);
             ArrayList<Member> list = new ArrayList<>();
 
-            Member m1 = new Member("조재희","9503051411711","jaehee3679","4a5s6d1f2g","01029523679");
-            Member m2 = new Member("조필연","6605151471611","mupo58","4a5s6d1f2g","01030703679");
+            Member m1 = new Member("조재희","9503050000000","jaehee1234","1234","01022222222");
+            Member m2 = new Member("조필연","6605150000000","jaehee","0000","01011111111");
             list.add(m1);
             list.add(m2);
 
@@ -122,8 +122,8 @@ public class HelpTools {
             ObjectOutputStream out = new ObjectOutputStream(fos);
             ArrayList<Book> list = new ArrayList<>();
 
-            Book b1 = new Book("jaehee3679","4a5s6d1f2g","없음","없음","없음","없음","대여 이력 없음");
-            Book b2 = new Book("mupo58","4a5s6d1f2g","없음","없음","없음","없음","대여 이력 없음");
+            Book b1 = new Book("jaehee1234","1234","없음","없음","없음","없음","대여 이력 없음");
+            Book b2 = new Book("jaehee","0000","없음","없음","없음","없음","대여 이력 없음");
             list.add(b1);
             list.add(b2);
 

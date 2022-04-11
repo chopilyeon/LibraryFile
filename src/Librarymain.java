@@ -97,7 +97,7 @@ public class Librarymain {
                     String id =sc.nextLine();
                     System.out.println("매니저 비밀번호를 입력하세요");
                     String password=sc.nextLine();
-                    if(id.equals("jaehee")&&password.equals("1234")){
+                    if(id.equals("jjhn")&&password.equals("1234")){
                         System.out.println("입고시킬 책 이름을 입력하세요");
                         String bookname = sc.nextLine();
                         System.out.println("입고시킬 책의 고유번호를 입력하세요");
@@ -122,7 +122,7 @@ public class Librarymain {
                     String id1 =sc.nextLine();
                     System.out.println("매니저 비밀번호를 입력하세요");
                     String password1=sc.nextLine();
-                    if(id1.equals("jaehee")&&password1.equals("1234")){
+                    if(id1.equals("jjhn")&&password1.equals("1234")){
                         System.out.println("제거시킬 책 이름을 입력하세요");
                         String bookname1 = sc.nextLine();
                         System.out.println("제거시킬 책의 고유번호를 입력하세요");
