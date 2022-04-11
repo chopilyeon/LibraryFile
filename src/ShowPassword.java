@@ -14,7 +14,7 @@ public class ShowPassword{
         ArrayList<Member> list=HelpTools.joinread();
         for(int i=0;i<list.size();i++){
             if((list.get(i).getName().equals(name))&&list.get(i).getIdentity().equals(identity)){
-                System.out.println("비밀번호는" + list.get(i).getPassword());
+                System.out.println("비밀번호는 "+ list.get(i).getPassword()+"입니다");
                 break;
             }
         }

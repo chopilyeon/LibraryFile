@@ -18,6 +18,7 @@ public class Withdrawal {
                 System.out.println("안전하게 탈퇴처리 되었습니다.");
                 list2.remove(i);
                 HelpTools.joinwrite(list2);
+
             }
         }
         for(int i=0;i<list1.size();i++){

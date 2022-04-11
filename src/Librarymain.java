@@ -86,8 +86,10 @@ public class Librarymain {
                     ShowPassword.showPassword();
                     System.out.println("계속 하고 진행하고 싶으면 Y를 그만 끝내려면 N을 누르십시오.");
                     if (sc.nextLine().equalsIgnoreCase("Y")) {
+                        //System.out.println("에러발생1");
                         continue;
                     } else if (!sc.nextLine().equalsIgnoreCase("Y")) {
+                        //System.out.println("에러발생2");
                         break start;
                     }
                 case 6:

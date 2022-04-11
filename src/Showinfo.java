@@ -14,7 +14,7 @@ public class Showinfo{
         ArrayList<Book> list=HelpTools.bookread();
         for(int i=0;i<list.size();i++){
             if((list.get(i).getId().equals(name))&&list.get(i).getPassword().equals(password)){
-                System.out.println(list.get(i).getBookname()+list.get(i).getBookhistory()+list.get(i).getUniqueCode()+list.get(i).getDate()+list.get(i).getWriter());
+                System.out.println("책 이름:\t"+list.get(i).getBookname()+"\t책 대여 여부:\t"+list.get(i).getBookhistory()+"\t책 고유 번호:\t"+list.get(i).getUniqueCode()+"\t책 대출 날짜:\t"+list.get(i).getDate()+"\t빌린 책의 작가:\t"+list.get(i).getWriter());
             }
         }
 
@@ -35,11 +35,12 @@ public class Showinfo{
             }
         }
         if (sum == 1) {
+            System.out.println("=========================대출 가능한 책 목록===============================");
             for (int i = 0; i < list2.size(); i++) {
-                System.out.println("=========================대출가능한 책목록===============================");
                 System.out.println(list2.get(i).getBookname() + list2.get(i).getUniqueNumber() + list2.get(i).getWriter());
-                System.out.println("=====================================================================");
+                System.out.println("====================================================================");
             }
+            System.out.println("===========================대출가능한 책 목록===============================");
         } else {
             System.out.println("회원 정보가 일치하지 않습니다. 다시 확인해주세요.");
         }

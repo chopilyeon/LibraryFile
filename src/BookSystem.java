@@ -44,7 +44,7 @@ public class BookSystem {
                         booklist.add(new Book(booklist.get(bookborrow).getId(), booklist.get(bookborrow).getPassword(), bookname, managerlist.get(j).getWriter(), managerlist.get(j).getUniqueNumber(), date, "대여"));
                         booklist.remove(bookborrow);
                         managerlist.remove(j); // 리스트는 동일한 책이 있어도 맨 앞줄부터 하나씩 제거되는 걸 이용함.
-                        System.out.println(bookwriter+"의"+bookname + "을" + date + "에 대여처리하였습니다");
+                        System.out.println(bookwriter+" 작가의 "+bookname + "을 " + date + "에 대여처리하였습니다");
                         HelpTools.bookwrite(booklist);
                         BookManager.bookadd(managerlist);
                         break;
@@ -89,7 +89,7 @@ public class BookSystem {
             if (login1 != 0 && booklist.get(turnin).getBookhistory().equals("대여")) {
                 booklist.add(new Book(booklist.get(turnin).getId(), booklist.get(turnin).getPassword(), "없음", "없음", "없음", "없음", "대여 이력 없음"));
                 managerlist.add(new BookManager(booklist.get(turnin).getBookname(), booklist.get(turnin).getUniqueCode(), booklist.get(turnin).getWriter())); // 리스트는 동일한 책이 있어도 맨 앞줄부터 하나씩 제거되는 걸 이용함.
-                System.out.println(booklist.get(turnin).getBookname() + "을" + date + "에 반납처리하였습니다");
+                System.out.println(booklist.get(turnin).getWriter()+" 작가의 "+booklist.get(turnin).getBookname() + "을 " + date + "에 반납처리하였습니다");
                 booklist.remove(turnin);
                 HelpTools.bookwrite(booklist);
                 BookManager.bookadd(managerlist);
